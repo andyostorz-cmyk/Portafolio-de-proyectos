@@ -342,6 +342,12 @@
     transition: all .2s;
     position: relative;
   }
+ .gallery-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+}
 
   .gallery-item:hover { transform: scale(1.02); box-shadow: 0 6px 20px rgba(232,0,28,0.15); }
 
@@ -644,14 +650,37 @@
     </div>
 
     <!-- GALERÍA DASHBOARDS + CONTACTO -->
-    <div style="display:flex;flex-direction:column;gap:18px;">
-      <div class="card">
-        <div class="card-title">🖼️ Galería Dashboards</div>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <div class="gallery-placeholder">📊<br><span style="font-size:10px;margin-top:4px;">Screenshot aquí</span></div>
-            <div class="gallery-overlay">🔍</div>
-            <div class="gallery-label">Dashboard Operativo</div>
+<div style="display:flex;flex-direction:column;gap:18px;">
+
+  <div class="card">
+
+    <div class="card-title">
+      🖼️ Galería Dashboards
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+
+        <a href="modelo_predictivo.png" target="_blank">
+
+          <img src="modelo_predictivo.png" class="gallery-img">
+
+        </a>
+
+        <div class="gallery-overlay">🔍</div>
+
+        <div class="gallery-label">
+          Dashboard Operativo
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
           </div>
           <div class="gallery-item">
             <div class="gallery-placeholder">📈<br><span style="font-size:10px;margin-top:4px;">Screenshot aquí</span></div>
